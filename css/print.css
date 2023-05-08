@@ -1,0 +1,5 @@
+@media print {
+    body{
+        background-color: rgb(68, 142, 177);
+    }
+}
