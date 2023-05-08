@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>msg</title>
+    <script>
+        var nowDate = new Date(); // 내장된 데이터 정보 불러오기
+
+        var hour = nowDate.getHours();
+
+        var msg = "";
+        if (hour < 6) msg = "더 자야지...";
+        else if (hour < 8) msg = "등교 준비중";
+        else if (hour < 9) msg = "등교중";
+        else if (hour < 12) msg = "열공중";
+        else if (hour < 14) msg = "식사중";
+        else if (hour < 16) msg = "열공중2";
+        else msg = "하교 후 쉬는 중";
+
+        alert (msg);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
